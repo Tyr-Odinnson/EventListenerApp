@@ -237,41 +237,29 @@
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme" />
 
-            <android.support.v4.widget.DrawerLayout
-                android:id="@+id/activity_main"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/teal">
+            <!--<android.support.v4.widget.DrawerLayout-->
+                <!--android:id="@+id/activity_main"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/teal">-->
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Main"
-                        android:textSize="50dp"
-                        android:id="@+id/sideText"
-                        android:layout_marginTop="200dp"
-                        android:layout_marginLeft="130dp"/>
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
 
 
-                </RelativeLayout>
-
-                <android.support.design.widget.NavigationView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    app:menu="@menu/navigation_menu"
-                    android:layout_gravity="start"
-                    app:headerLayout="@layout/nav_header"
-                    android:id="@+id/nv">
-
-                </android.support.design.widget.NavigationView>
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Main"-->
+                        <!--android:textSize="50dp"-->
+                        <!--android:id="@+id/sideText"-->
+                        <!--android:layout_marginTop="200dp"-->
+                        <!--android:layout_marginLeft="130dp"/>-->
 
 
+                <!--</RelativeLayout>-->
 
-            </android.support.v4.widget.DrawerLayout>
+            <!--</android.support.v4.widget.DrawerLayout>-->
         </RelativeLayout>
     </ScrollView>
