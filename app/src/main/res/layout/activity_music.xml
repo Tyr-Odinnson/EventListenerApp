@@ -20,94 +20,20 @@
             android:background="@drawable/bottom_corners" />
 
         <TextView
-            android:id="@+id/eventTwoText"
-            android:layout_width="54dp"
+            android:id="@+id/categoryView"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/eventTwo"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="61dp"
-            android:layout_marginRight="61dp"
-            android:text="Sport"
-            android:textAlignment="center"
-            android:textColor="@android:color/black" />
-
-        <ImageButton
-            android:id="@+id/musicButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="21dp"
-            android:layout_marginLeft="21dp"
-            android:layout_marginTop="350dp"
-            app:srcCompat="@drawable/music" />
-
-        <ImageButton
-            android:id="@+id/conventionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="350dp"
-            android:layout_marginEnd="21dp"
-            android:layout_marginRight="21dp"
-            app:srcCompat="@drawable/convention" />
-
-        <TextView
-            android:id="@+id/conventionText"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/conventionButton"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="23dp"
-            android:layout_marginRight="23dp"
-            android:text="Conventions/Events"
-            android:textAlignment="center"
-            android:textColor="@android:color/black" />
-
-        <ImageButton
-            android:id="@+id/comedyButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="21dp"
-            android:layout_marginLeft="21dp"
-            android:layout_marginTop="120dp"
-            app:srcCompat="@drawable/comedy" />
-
-
-        <ImageButton
-            android:id="@+id/dashButton"
-            android:layout_width="65dp"
-            android:layout_height="66dp"
-            android:layout_alignEnd="@+id/toolbar"
-            android:layout_alignRight="@+id/toolbar"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="13dp"
-            android:layout_marginRight="13dp"
-            app:srcCompat="@drawable/dashboard" />
-
-        <TextView
-            android:id="@+id/musicText"
-            android:layout_width="76dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/musicButton"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="55dp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginStart="127dp"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="133dp"
+            android:layout_marginRight="133dp"
             android:text="Music"
             android:textAlignment="center"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/logoImage"
             android:layout_width="58dp"
             android:layout_height="58dp"
@@ -117,7 +43,45 @@
             android:layout_marginStart="7dp"
             android:layout_marginLeft="7dp"
             android:layout_marginTop="11dp"
+            android:clickable="true"
             app:srcCompat="@drawable/eventlistenerlogo" />
+
+        <ImageButton
+            android:id="@+id/dashButton"
+            android:layout_width="56dp"
+            android:layout_height="55dp"
+            android:layout_alignEnd="@+id/toolbar"
+            android:layout_alignRight="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            app:srcCompat="@drawable/dashboard" />
+
+        <ImageButton
+            android:id="@+id/eventOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="120dp"
+            app:srcCompat="@drawable/metallica" />
+
+        <TextView
+            android:id="@+id/eventOneText"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventOne"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="14dp"
+            android:text="Metallica"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
 
         <ImageButton
             android:id="@+id/eventTwo"
@@ -128,38 +92,75 @@
             android:layout_marginTop="120dp"
             android:layout_marginEnd="21dp"
             android:layout_marginRight="21dp"
-            app:srcCompat="@drawable/balllogo" />
+            app:srcCompat="@drawable/lildicky" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="150dp"
+            android:id="@+id/eventTwoText"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="127dp"
-            android:layout_marginLeft="127dp"
-            android:layout_marginTop="23dp"
-            android:layout_marginEnd="133dp"
-            android:layout_marginRight="133dp"
-            android:text="EventListener"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/comedyText"
-            android:layout_width="136dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/comedyButton"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="19dp"
-            android:text="Comedy"
+            android:layout_below="@+id/eventTwo"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:text="Lil' Dicky"
             android:textAlignment="center"
             android:textColor="@android:color/black" />
 
         <ImageButton
-            android:id="@+id/communityButton"
+            android:id="@+id/eventThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="350dp"
+            app:srcCompat="@drawable/dethklok" />
+
+        <TextView
+            android:id="@+id/eventThreeText"
+            android:layout_width="119dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/eventThree"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="14dp"
+            android:text="Dethklok!"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/eventFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            app:srcCompat="@drawable/pinkfloyd" />
+
+        <TextView
+            android:id="@+id/eventFourText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventFour"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:text="The Pink Floyd Experience"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+
+        <ImageButton
+            android:id="@+id/eventFive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -168,10 +169,24 @@
             android:layout_marginStart="21dp"
             android:layout_marginLeft="21dp"
             android:layout_marginTop="580dp"
-            app:srcCompat="@drawable/community" />
+            app:srcCompat="@drawable/malone" />
+
+        <TextView
+            android:id="@+id/eventFiveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventFive"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="14dp"
+            android:text="Post Malone"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
 
         <ImageButton
-            android:id="@+id/theatreButton"
+            android:id="@+id/eventSix"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -180,38 +195,24 @@
             android:layout_marginTop="580dp"
             android:layout_marginEnd="21dp"
             android:layout_marginRight="21dp"
-            app:srcCompat="@drawable/theatre" />
+            app:srcCompat="@drawable/weeknd" />
 
         <TextView
-            android:id="@+id/communityText"
+            android:id="@+id/eventSixText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/communityButton"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="29dp"
-            android:layout_marginLeft="29dp"
-            android:layout_marginTop="17dp"
-            android:text="Community Events"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"/>
-
-        <TextView
-            android:id="@+id/theatreText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/theatreButton"
+            android:layout_below="@+id/eventSix"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="66dp"
-            android:layout_marginRight="66dp"
-            android:text="Theatre"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:text="The Weeknd"
             android:textAlignment="center"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black" />
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar4"
+            android:id="@+id/toolbar2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -225,8 +226,7 @@
             android:layout_marginEnd="11dp"
             android:layout_marginRight="11dp"
             android:background="@drawable/top_corners"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme" />
+            />
 
 
     </RelativeLayout>

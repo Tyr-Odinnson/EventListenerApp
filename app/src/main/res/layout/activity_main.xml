@@ -23,13 +23,13 @@
                 android:id="@+id/eventTwoText"
                 android:layout_width="54dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/eventTwo"
+                android:layout_below="@+id/sportsButton"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="61dp"
                 android:layout_marginRight="61dp"
-                android:text="Sport"
+                android:text="Sports Events"
                 android:textAlignment="center"
                 android:textColor="@android:color/black" />
 
@@ -62,10 +62,10 @@
                 android:layout_below="@+id/conventionButton"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="14dp"
                 android:layout_marginEnd="23dp"
                 android:layout_marginRight="23dp"
-                android:text="Conventions/Events"
+                android:text="Conventions/Expos"
                 android:textAlignment="center"
                 android:textColor="@android:color/black" />
 
@@ -83,8 +83,8 @@
 
             <ImageButton
                 android:id="@+id/dashButton"
-                android:layout_width="65dp"
-                android:layout_height="66dp"
+                android:layout_width="56dp"
+                android:layout_height="55dp"
                 android:layout_alignEnd="@+id/toolbar"
                 android:layout_alignRight="@+id/toolbar"
                 android:layout_alignParentTop="true"
@@ -102,7 +102,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="55dp"
                 android:layout_marginLeft="55dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="14dp"
                 android:text="Music"
                 android:textAlignment="center"
                 android:textColor="@android:color/black" />
@@ -120,7 +120,7 @@
                 app:srcCompat="@drawable/eventlistenerlogo" />
 
             <ImageButton
-                android:id="@+id/eventTwo"
+                android:id="@+id/sportsButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -153,7 +153,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="30dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="19dp"
+                android:layout_marginTop="14dp"
                 android:text="Comedy"
                 android:textAlignment="center"
                 android:textColor="@android:color/black" />
@@ -191,7 +191,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="29dp"
                 android:layout_marginLeft="29dp"
-                android:layout_marginTop="17dp"
+                android:layout_marginTop="14dp"
                 android:text="Community Events"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"/>
@@ -203,7 +203,7 @@
                 android:layout_below="@+id/theatreButton"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="17dp"
+                android:layout_marginTop="14dp"
                 android:layout_marginEnd="66dp"
                 android:layout_marginRight="66dp"
                 android:text="Theatre"
@@ -211,7 +211,7 @@
                 android:textColor="@android:color/black"/>
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar4"
+                android:id="@+id/toolbar2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"

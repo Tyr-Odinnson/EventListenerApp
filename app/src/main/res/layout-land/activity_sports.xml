@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:background="@drawable/bottom_corners" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Sports Events"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/logoImage"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_alignStart="@+id/toolbar"
+            android:layout_alignLeft="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="11dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/eventlistenerlogo" />
+
+        <ImageButton
+            android:id="@+id/dashButton"
+            android:layout_width="55dp"
+            android:layout_height="62dp"
+            android:layout_alignEnd="@+id/toolbar"
+            android:layout_alignRight="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            app:srcCompat="@drawable/dashboard" />
+
+        <ImageButton
+            android:id="@+id/eventOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/allblacks" />
+
+        <TextView
+            android:id="@+id/eventOneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventOne"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:text="All Blacks vs Wallabies"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/eventTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/silverferns" />
+
+        <TextView
+            android:id="@+id/eventTwoText"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventTwo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Netball World Cup - United Kingdom"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/eventThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="21dp"
+            app:srcCompat="@drawable/tallblacks" />
+
+        <TextView
+            android:id="@+id/eventThreeText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventThree"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Tall Blacks vs. Great Britain"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/eventFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="240dp"
+            app:srcCompat="@drawable/warriors" />
+
+        <TextView
+            android:id="@+id/eventFourText"
+            android:layout_width="129dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/eventFour"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Warriors vs Canberra Raiders"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/eventFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="240dp"
+            app:srcCompat="@drawable/juniorfa" />
+
+        <TextView
+            android:id="@+id/eventFiveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventFive"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Fight for Life"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/eventSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="240dp"
+            android:layout_marginRight="21dp"
+            app:srcCompat="@drawable/cricket" />
+
+        <TextView
+            android:id="@+id/eventSixText"
+            android:layout_width="124dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/eventSix"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="Cricket World Cup 2019"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="510dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/top_corners"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton comedyBtn;
     private ImageButton musicBtn;
     private ImageButton communityBtn;
+    private ImageButton sportsBtn;
+    private ImageButton conventionsBtn;
+    private ImageButton theatreBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         comedyBtn = findViewById(R.id.comedyButton);
         musicBtn = findViewById(R.id.musicButton);
         communityBtn = findViewById(R.id.communityButton);
+        sportsBtn = findViewById(R.id.sportsButton);
+        conventionsBtn = findViewById(R.id.conventionButton);
+        theatreBtn = findViewById(R.id.theatreButton);
         comedyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +48,28 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(communityIntent);
             }
         });
+        sportsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sportsIntent = new Intent(MainActivity.this, SportsActivity.class);
+                startActivity(sportsIntent);
+            }
+        });
+        conventionsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent conventionsIntent = new Intent(MainActivity.this, ConventionsActivity.class);
+                startActivity(conventionsIntent);
+            }
+        });
+        theatreBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent theatreIntent = new Intent(MainActivity.this, TheatreActivity.class);
+                startActivity(theatreIntent);
+            }
+        });
+
 
    }
 }
