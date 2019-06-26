@@ -1,63 +1,47 @@
 package com.vogella.android.eventlistenerapp;
 
-import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private DrawerLayout dl;
-    private ActionBarDrawerToggle t;
-    private NavigationView nv;
+    private ImageButton comedyBtn;
+    private ImageButton musicBtn;
+    private ImageButton communityBtn;
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dl = (DrawerLayout)findViewById(R.id.activity_main);
-        t = new ActionBarDrawerToggle(this, dl,R.string.Open, R.string.Close);
-
-        dl.addDrawerListener(t);
-        t.syncState();
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        nv = (NavigationView)findViewById(R.id.nv);
-        nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+        comedyBtn = findViewById(R.id.comedyButton);
+        musicBtn = findViewById(R.id.musicButton);
+        communityBtn = findViewById(R.id.communityButton);
+        comedyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id = item.getItemId();
-                switch(id)
-                {
-                    case R.id.newZealand:
-                        Toast.makeText(MainActivity.this, "My Account",Toast.LENGTH_SHORT).show();break;
-                    case R.id.settings:
-                        Toast.makeText(MainActivity.this, "Settings",Toast.LENGTH_SHORT).show();break;
-                    case R.id.mycart:
-                        Toast.makeText(MainActivity.this, "My Cart",Toast.LENGTH_SHORT).show();break;
-                    default:
-                        return true;
-                }
-
-
-                return true;
-
+            public void onClick(View v) {
+                Intent comedyIntent = new Intent(MainActivity.this, ComedyActivity.class);
+                startActivity(comedyIntent);
+            }
+        });
+        musicBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent musicIntent = new Intent(MainActivity.this, MusicActivity.class);
+                startActivity(musicIntent);
+            }
+        });
+        communityBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent communityIntent = new Intent(MainActivity.this, CommunityActivity.class);
+                startActivity(communityIntent);
             }
         });
 
-
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        if(t.onOptionsItemSelected(item))
-            return true;
-
-        return super.onOptionsItemSelected(item);
-    }
+   }
 }

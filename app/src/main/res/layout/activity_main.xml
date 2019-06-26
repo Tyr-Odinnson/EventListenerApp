@@ -20,10 +20,10 @@
                 android:background="@drawable/bottom_corners" />
 
             <TextView
-                android:id="@+id/sportText"
+                android:id="@+id/eventTwoText"
                 android:layout_width="54dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/sportButton"
+                android:layout_below="@+id/eventTwo"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="14dp"
@@ -41,7 +41,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="21dp"
                 android:layout_marginLeft="21dp"
-                android:layout_marginTop="395dp"
+                android:layout_marginTop="350dp"
                 app:srcCompat="@drawable/music" />
 
             <ImageButton
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="395dp"
+                android:layout_marginTop="350dp"
                 android:layout_marginEnd="21dp"
                 android:layout_marginRight="21dp"
                 app:srcCompat="@drawable/convention" />
@@ -77,18 +77,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="21dp"
                 android:layout_marginLeft="21dp"
-                android:layout_marginTop="159dp"
+                android:layout_marginTop="120dp"
                 app:srcCompat="@drawable/comedy" />
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/toolbar"
-                android:layout_marginTop="1dp"
-                android:background="@drawable/corners"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme" />
 
             <ImageButton
                 android:id="@+id/dashButton"
@@ -129,12 +120,12 @@
                 app:srcCompat="@drawable/eventlistenerlogo" />
 
             <ImageButton
-                android:id="@+id/sportButton"
+                android:id="@+id/eventTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="161dp"
+                android:layout_marginTop="120dp"
                 android:layout_marginEnd="21dp"
                 android:layout_marginRight="21dp"
                 app:srcCompat="@drawable/balllogo" />
@@ -176,7 +167,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="21dp"
                 android:layout_marginLeft="21dp"
-                android:layout_marginTop="619dp"
+                android:layout_marginTop="580dp"
                 app:srcCompat="@drawable/community" />
 
             <ImageButton
@@ -186,7 +177,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="619dp"
+                android:layout_marginTop="580dp"
                 android:layout_marginEnd="21dp"
                 android:layout_marginRight="21dp"
                 app:srcCompat="@drawable/theatre" />
@@ -228,50 +219,15 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginStart="7dp"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="815dp"
-                android:layout_marginEnd="7dp"
-                android:layout_marginRight="7dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="799dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
                 android:background="@drawable/top_corners"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme" />
 
-            <android.support.v4.widget.DrawerLayout
-                android:id="@+id/activity_main"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/teal">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Main"
-                        android:textSize="50dp"
-                        android:id="@+id/sideText"
-                        android:layout_marginTop="200dp"
-                        android:layout_marginLeft="130dp"/>
-
-
-                </RelativeLayout>
-
-                <android.support.design.widget.NavigationView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    app:menu="@menu/navigation_menu"
-                    android:layout_gravity="start"
-                    app:headerLayout="@layout/nav_header"
-                    android:id="@+id/nv">
-
-                </android.support.design.widget.NavigationView>
-
-
-
-            </android.support.v4.widget.DrawerLayout>
         </RelativeLayout>
     </ScrollView>
