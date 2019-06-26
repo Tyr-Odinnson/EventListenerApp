@@ -83,8 +83,8 @@
 
             <ImageButton
                 android:id="@+id/dashButton"
-                android:layout_width="65dp"
-                android:layout_height="66dp"
+                android:layout_width="56dp"
+                android:layout_height="55dp"
                 android:layout_alignEnd="@+id/toolbar"
                 android:layout_alignRight="@+id/toolbar"
                 android:layout_alignParentTop="true"
