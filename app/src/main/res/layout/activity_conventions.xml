@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85cced"
+    android:orientation="vertical"
+    tools:context=".ConventionsActivity">
+
+    <!--ImageView: display convention image-->
+    <ImageView
+        android:id="@+id/convention"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFFFF"
+        android:contentDescription="convention image"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/conventions" />
+
+    <!--TextView: display title-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Tatoo Expo"
+        android:textColor="#eff70c"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!--ImageView: display image-->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="image"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tatoo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Details" />
+
+    <!--TextView: display title-->
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="2019 NZ Art Show Gala Evening"
+        android:textColor="#eff70c"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!--ImageView: display image-->
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="image"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/art" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Details" />
+
+    <!--TextView: display title-->
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="NZ Classic Car Convention"
+        android:textColor="#eff70c"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!--ImageView: display image-->
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="image"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/car" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Details" />
+
+
+    <!--TextView: display title-->
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Armageddon Comicon Expo"
+        android:textColor="#eff70c"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!--ImageView: display image-->
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="convention image"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/armageddon" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Details" />
+
+
+
+</LinearLayout>
+
+</ScrollView>
