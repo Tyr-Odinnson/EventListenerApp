@@ -1,155 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
     >
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#85cced"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:isScrollContainer="true"
     android:orientation="vertical"
-    tools:context=".ConventionsActivity">
+    android:padding="2dp">
 
-    <!--ImageView: display convention image-->
-    <ImageView
-        android:id="@+id/convention"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_gravity="center"
-        android:background="#FFFFFFFF"
-        android:contentDescription="convention image"
-        android:gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/conventions" />
+        android:layout_height="78dp"
+        android:background="@drawable/bottom_corners" />
 
-    <!--TextView: display title-->
     <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
+        android:id="@+id/sportText"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/sportButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="Armageddon"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <ImageButton
+        android:id="@+id/musicButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="Tatoo Expo"
-        android:textColor="#eff70c"
-        android:textSize="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="350dp"
+        app:srcCompat="@drawable/art" />
+
+    <ImageButton
+        android:id="@+id/conventionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        app:srcCompat="@drawable/tattoo" />
+
+    <TextView
+        android:id="@+id/conventionText"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conventionButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:text="Tattoo Convention"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <ImageButton
+        android:id="@+id/eventOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/annie" />
+
+    <ImageButton
+        android:id="@+id/eventTwo"
+        android:layout_width="65dp"
+        android:layout_height="66dp"
+        android:layout_alignEnd="@+id/toolbar"
+        android:layout_alignRight="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        app:srcCompat="@drawable/dashboard" />
+
+    <TextView
+        android:id="@+id/musicText"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/musicButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:text="Art Convention"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignStart="@+id/toolbar"
+        android:layout_alignLeft="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/eventlistenerlogo" />
+
+    <ImageButton
+        android:id="@+id/sportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        app:srcCompat="@drawable/arma" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        android:text="EventListener"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
         android:textStyle="bold" />
 
-    <!--ImageView: display image-->
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:contentDescription="image"
-        android:gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/tatoo" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Details" />
-
-    <!--TextView: display title-->
     <TextView
-        android:id="@+id/title2"
-        android:layout_width="match_parent"
+        android:id="@+id/comedyText"
+        android:layout_width="136dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="2019 NZ Art Show Gala Evening"
-        android:textColor="#eff70c"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_below="@+id/eventOne"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="9dp"
+        android:text="Annie"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
 
-    <!--ImageView: display image-->
-    <ImageView
-        android:id="@+id/image2"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:contentDescription="image"
-        android:gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/art" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
+    <ImageButton
+        android:id="@+id/communityButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Details" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="580dp"
+        app:srcCompat="@drawable/game" />
 
-    <!--TextView: display title-->
+    <ImageButton
+        android:id="@+id/theatreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        app:srcCompat="@drawable/car" />
+
     <TextView
-        android:id="@+id/title3"
-        android:layout_width="match_parent"
+        android:id="@+id/communityText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="NZ Classic Car Convention"
-        android:textColor="#eff70c"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_below="@+id/communityButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="17dp"
+        android:text="Gaming Convention"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
 
-    <!--ImageView: display image-->
-    <ImageView
-        android:id="@+id/image3"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:contentDescription="image"
-        android:gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/car" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Details" />
-
-
-    <!--TextView: display title-->
     <TextView
-        android:id="@+id/title4"
+        android:id="@+id/theatreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/theatreButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:text="Car Convention"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="Armageddon Comicon Expo"
-        android:textColor="#eff70c"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="799dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/top_corners"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
-    <!--ImageView: display image-->
-    <ImageView
-        android:id="@+id/image4"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:contentDescription="convention image"
-        android:gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/armageddon" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Details" />
-
-
-
-</LinearLayout>
-
+</RelativeLayout>
 </ScrollView>

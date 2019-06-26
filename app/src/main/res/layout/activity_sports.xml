@@ -21,7 +21,7 @@
 
         <TextView
             android:id="@+id/sportText"
-            android:layout_width="54dp"
+            android:layout_width="56dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/sportButton"
             android:layout_alignParentEnd="true"
@@ -29,7 +29,7 @@
             android:layout_marginTop="14dp"
             android:layout_marginEnd="61dp"
             android:layout_marginRight="61dp"
-            android:text="Sport"
+            android:text="Tall Blacks"
             android:textAlignment="center"
             android:textColor="@android:color/black" />
 
@@ -42,7 +42,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="350dp"
-            app:srcCompat="@drawable/music" />
+            app:srcCompat="@drawable/baseball" />
 
         <ImageButton
             android:id="@+id/conventionButton"
@@ -53,7 +53,7 @@
             android:layout_marginTop="350dp"
             android:layout_marginEnd="21dp"
             android:layout_marginRight="21dp"
-            app:srcCompat="@drawable/convention" />
+            app:srcCompat="@drawable/war" />
 
         <TextView
             android:id="@+id/conventionText"
@@ -65,7 +65,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="23dp"
             android:layout_marginRight="23dp"
-            android:text="Conventions/Events"
+            android:text="New Zealand Warriors"
             android:textAlignment="center"
             android:textColor="@android:color/black" />
 
@@ -81,7 +81,7 @@
             app:srcCompat="@drawable/juniourfa" />
 
         <ImageButton
-            android:id="@+id/dashButton"
+            android:id="@+id/eventTwo"
             android:layout_width="65dp"
             android:layout_height="66dp"
             android:layout_alignEnd="@+id/toolbar"
@@ -102,7 +102,7 @@
             android:layout_marginStart="55dp"
             android:layout_marginLeft="55dp"
             android:layout_marginTop="15dp"
-            android:text="Music"
+            android:text="NZ Mens Baseball"
             android:textAlignment="center"
             android:textColor="@android:color/black" />
 
@@ -127,7 +127,7 @@
             android:layout_marginTop="120dp"
             android:layout_marginEnd="21dp"
             android:layout_marginRight="21dp"
-            app:srcCompat="@drawable/balllogo" />
+            app:srcCompat="@drawable/tallblacks" />
 
         <TextView
             android:id="@+id/textView"
@@ -153,7 +153,7 @@
             android:layout_marginStart="18dp"
             android:layout_marginLeft="18dp"
             android:layout_marginTop="9dp"
-            android:text="Comedy"
+            android:text="Juniour Fa"
             android:textAlignment="center"
             android:textColor="@android:color/black" />
 
@@ -167,7 +167,7 @@
             android:layout_marginStart="21dp"
             android:layout_marginLeft="21dp"
             android:layout_marginTop="580dp"
-            app:srcCompat="@drawable/community" />
+            app:srcCompat="@drawable/soccer" />
 
         <ImageButton
             android:id="@+id/theatreButton"
@@ -179,7 +179,7 @@
             android:layout_marginTop="580dp"
             android:layout_marginEnd="21dp"
             android:layout_marginRight="21dp"
-            app:srcCompat="@drawable/theatre" />
+            app:srcCompat="@drawable/hockey" />
 
         <TextView
             android:id="@+id/communityText"
@@ -191,9 +191,9 @@
             android:layout_marginStart="29dp"
             android:layout_marginLeft="29dp"
             android:layout_marginTop="17dp"
-            android:text="Community Events"
+            android:text="NZ Mens Soccer "
             android:textAlignment="center"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/theatreText"
@@ -205,9 +205,9 @@
             android:layout_marginTop="17dp"
             android:layout_marginEnd="66dp"
             android:layout_marginRight="66dp"
-            android:text="Theatre"
+            android:text="NZ Girls Hockey"
             android:textAlignment="center"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar4"

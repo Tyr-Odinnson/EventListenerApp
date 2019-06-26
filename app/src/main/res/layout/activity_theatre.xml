@@ -5,145 +5,227 @@
     android:layout_height="wrap_content"
     >
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#85cced"
-    android:orientation="vertical"
-    tools:context=".TheatreActivity">
-
-    <!--ImageView: display theatre-->
-    <ImageView
-        android:id="@+id/theatre"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_gravity="center"
-        android:background="#FFFFFFFF"
-        android:contentDescription="theatre"
-        android:gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/theatre3" />
-
-    <!--TextView: display title-->
-    <TextView
-        android:id="@+id/title"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="Iliad - Classic Greek Poem"
-        android:textColor="#eff70c"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:background="@color/grey"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:padding="2dp">
 
-    <!--ImageView: display image-->
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:contentDescription="image"
-        android:gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/iliad" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:background="@drawable/bottom_corners" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Details" />
+        <TextView
+            android:id="@+id/sportText"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sportButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="61dp"
+            android:layout_marginRight="61dp"
+            android:text="Iliad"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
 
-    <!--TextView: display title-->
-    <TextView
-        android:id="@+id/title2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="Warhorse"
-        android:textColor="#eff70c"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/musicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="350dp"
+            app:srcCompat="@drawable/lloydcole" />
 
-    <!--ImageView: display image-->
-    <ImageView
-        android:id="@+id/image2"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:contentDescription="image"
-        android:gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/warhorse" />
+        <ImageButton
+            android:id="@+id/conventionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            app:srcCompat="@drawable/themaori" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Details" />
+        <TextView
+            android:id="@+id/conventionText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conventionButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:text="The Maori Side Steps"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
 
-    <!--TextView: display title-->
-    <TextView
-        android:id="@+id/title3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="Inferno"
-        android:textColor="#eff70c"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/eventOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            app:srcCompat="@drawable/warhorse" />
 
-    <!--ImageView: display image-->
-    <ImageView
-        android:id="@+id/image3"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:contentDescription="illustration image"
-        android:gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/inferno" />
+        <ImageButton
+            android:id="@+id/eventTwo"
+            android:layout_width="65dp"
+            android:layout_height="66dp"
+            android:layout_alignEnd="@+id/toolbar"
+            android:layout_alignRight="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            app:srcCompat="@drawable/dashboard" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Details" />
+        <TextView
+            android:id="@+id/musicText"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/musicButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="15dp"
+            android:text="Lloyd Cole "
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
 
-    <!--TextView: display title-->
-    <TextView
-        android:id="@+id/title4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="Annie- Stage Musical"
-        android:textColor="#eff70c"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_alignStart="@+id/toolbar"
+            android:layout_alignLeft="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="11dp"
+            app:srcCompat="@drawable/eventlistenerlogo" />
 
-    <!--ImageView: display image-->
-    <ImageView
-        android:id="@+id/image4"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:contentDescription="illustration image"
-        android:gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/annie" />
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Details" />
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/sportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            app:srcCompat="@drawable/iliad" />
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="127dp"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="133dp"
+            android:layout_marginRight="133dp"
+            android:text="EventListener"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/comedyText"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventOne"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="9dp"
+            android:text="War Horse"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/communityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="580dp"
+            app:srcCompat="@drawable/popup" />
+
+        <ImageButton
+            android:id="@+id/theatreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="580dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            app:srcCompat="@drawable/room" />
+
+        <TextView
+            android:id="@+id/communityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/communityButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="17dp"
+            android:text="Pop Up Globe Winter 2019"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/theatreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/theatreButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:text="Room On The Broom"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar4"
+            android:layout_width="232dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="799dp"
+            android:layout_marginEnd="167dp"
+            android:layout_marginRight="167dp"
+            android:background="@drawable/top_corners"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+    </RelativeLayout>
 </ScrollView>
